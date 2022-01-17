@@ -6,6 +6,7 @@ const DEFAULT_MODE = 'color';
 const DEFAULT_GRIDMODE = '1px solid black';
 const DEFAULT_GRIDCOLOR = 'black';
 
+
 let grid = document.querySelector('.game-container');
 let clearButton = document.querySelector('.clear-button');
 let pixelSlider = document.querySelector('.pixel-slider');
@@ -74,11 +75,13 @@ function toggleGrid(){
     gridElements = Array.from(gridElements);
     if(currentGridMode === `1px solid ${currentGridColor}`){
         currentGridMode = 'none';
+        gridToggleButton.style.color ='red';
         for(let i= 0; i< gridElements.length; i++){
             gridElements[i].style.border = currentGridMode;
         }
     }else{
         currentGridMode = `1px solid ${currentGridColor}`;
+        gridToggleButton.style.color ='green';
         for(let i= 0; i< gridElements.length; i++){
             gridElements[i].style.border = currentGridMode;
         }
@@ -167,6 +170,7 @@ function setUpButtons(){
     for(let i = 0; i < penOptionsButtons.length; i++){
         penOptionsButtons[i].addEventListener('click',function(){updateButtons(penOptionsButtons[i].className.split(" ")[0])});
     }
+    gridToggleButton.style.color ='green';
     updateButtons(DEFAULT_ACTIVE_TOOL);
 }
 
