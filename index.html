@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/5ed27ce724.js" crossorigin="anonymous"></script>
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+    </header>
+    <div class='content'>
+        <div class="pen-options container options">
+            <h2>Pen-Options</h2>
+            <div class="pen-color-options color-options"><i class="fas fa-palette icons-dark"></i><input type='color' value='#000000' class='pen-color-picker color-picker'></div>
+            <button class="color-pen pen-options-button"><i class="fas fa-pen"></i></button>
+            <button class="rainbow-pen pen-options-button"><i class="fas fa-pen"></i></button>
+            <button class="eraser pen-options-button"><i class="fas fa-eraser"></i></button>
+            <button class="color-bucket pen-options-button"><i class="fas fa-fill-drip"></i></button>
+        </div>
+        <div class="game-container container">
+            
+        </div>
+        <div class="bg-options container options">
+            <h2>Background-Options</h2>
+            <div class="bg-color-options color-options"><i class="fas fa-palette icons-dark"></i><input type='color' value='#FFFFFF' class='bg-color-picker color-picker'></div>
+            <button class="grid-options grid-toggle"><i class="fas fa-th icons-dark"></i></button>
+            <input type="range" min="1" max="100" value="16" class="slider pixel-slider">
+            <label for="pixel-slider" id="slider-label"></label>
+            <div class="grid-color-options color-options"><i class="fas fa-th icons-dark"></i><input type='color' value='#000000' class='grid-color-picker color-picker'></div>
+        </div>
+    </div>
+    <button class="clear-button"><i class="fas fa-trash-alt icons-dark"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>

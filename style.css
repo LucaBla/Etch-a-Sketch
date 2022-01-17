@@ -1,0 +1,183 @@
+@font-face {
+    font-family: Anton ;
+    src: url(./Anton-web/anton-regular-webfont.woff);
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-image:url(./img/bg.svg);
+    color: white;
+    font-family: Anton;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+i{
+    font-size: 1.8em;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5em;
+
+}
+
+.container{
+    background: rgba( 0, 0, 0, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 8px solid rgba(0, 0, 0, 0.18);
+    padding: 20px;
+    width: 12em;
+    text-align: center;
+    
+}
+
+.game-container{
+    display: grid;
+    column-gap: 0px;
+    row-gap: 0px;
+    height: 35em;
+    width: 35em;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 1em;
+    text-align: center;
+    
+}
+
+.options .fas{
+    font-size: 2em;
+}
+
+.grid-element{
+    border: 1px solid black;
+    background-color: white;
+    justify-self: stretch;
+}
+
+.color-preview {
+    background-color: black;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+.color-picker{
+    background-color: transparent;
+    width: 3em;
+    height: 3em;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    border: none;
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+.color-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.rainbow-pen{
+    border: 3px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 55%, #2c90fc 65%, #b8fd33 75%,
+     #fec837 85%, #fd1892 100%);
+    border-image-slice: 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+.fa-palette{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.clear-button {
+    margin-top: 1em;
+    font-size: 2.5em;
+}
+
+.icons-dark{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 8em;
+    height: 0.5em;
+    border-radius: 5px;  
+    background: rgba(0, 0,0,0.9);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: white;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+  .grid-color-options{
+      font-size: 1.2em;
+  }
