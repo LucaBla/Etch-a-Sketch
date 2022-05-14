@@ -1,2 +1,4 @@
 # Etch-a-Sketch
-Simple Etch-a-ketch game made with HTML, CSS and JS.
+Etch-a-Sketch game you can play in your Browser with your mouse. 
+## Description
+Play it [here](https://lucabla.github.io/Etch-a-Sketch/).
